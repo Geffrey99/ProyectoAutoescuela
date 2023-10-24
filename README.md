@@ -1,4 +1,5 @@
-# ProyectoAutoescuela
+# ProyectoAutoescuela 
+Geffrey Zambrano 
 Diseño de la Interfaz de una Intranet Web de una Auto Escuela
 Requerimientos:
 La Intranet será accesible desde la Web de la Auto Escuela a través de un logueo del usuario.
