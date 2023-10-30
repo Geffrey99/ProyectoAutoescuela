@@ -10,7 +10,7 @@
 <body>
 <?php        
 require '../entities/db.php';
-
+//session_start();
 $db = new Database(); // Crea una nueva instancia de la clase Database
 $pdo = $db->getPdo(); // Obtiene el objeto PDO
 
