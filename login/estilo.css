@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(R.jpg);
+}
+.login-div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.719); /* Fondo blanco con 80% de opacidad */
+   /* border: 2px solid #007BFF; /* Borde azul */
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+h4 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+input:focus {
+    background-color: #ffffcc; /* Color de fondo amarillo claro */
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+.a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: blue;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}

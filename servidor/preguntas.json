@@ -1,0 +1,32 @@
+[
+    {
+        "numero": 1,
+        "categoria": "motorsddddddd",
+        "descripcion": "¿que es el par motor?",
+        "opciones": [
+            "Opción 1",
+            "Opción 2",
+            "Opción 3"
+        ]
+    },
+    {
+        "numero": 2,
+        "categoria": "circulacion",
+        "descripcion": "cfredd",
+        "opciones": [
+            "Opción 1",
+            "Opción 2",
+            "Opción 3"
+        ]
+    },
+    {
+        "numero": 3,
+        "categoria": "carretera",
+        "descripcion": "ddddd",
+        "opciones": [
+            "Opción 1",
+            "Opción 2",
+            "Opción 3"
+        ]
+    }
+]
