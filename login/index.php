@@ -9,7 +9,9 @@
 </head>
 <body>
 <?php        
-require '../entities/db.php';
+require_once '../helper/autocargar.php';
+// require '../entities/db.php';
+// include '../session/loginSesion.php';
 //session_start();
 $db = new Database(); // Crea una nueva instancia de la clase Database
 $pdo = $db->getPdo(); // Obtiene el objeto PDO
@@ -23,9 +25,9 @@ if (isset($_POST['nombre']) && isset($_POST['contrasena'])) {
     $stmt->execute([$username]);
     $user = $stmt->fetch();
     if ($user && $password == $user['contrasena']) {
-        session_start();
-        $_SESSION['username'] = $user['username'];
-    
+      //  session_start();
+      login($user);
+      //  $_SESSION['username'] = $user['username'];
         header('Location: ../index.html');
     } else {
         echo "Nombre de usuario o contraseña incorrectos.";

@@ -36,7 +36,8 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['repe
     }
 
     // se inserta el nuevo usuario en la base de datos
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    $hashed_password = $password;
+   // $hashed_password = password_hash($password, PASSWORD_DEFAULT); sirve para guardar la contraseña cifrada
     $sql = "INSERT INTO Usuario (nombre, contrasena) VALUES (?, ?)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$username, $hashed_password]);
