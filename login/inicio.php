@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Aquí es donde incluyes tu archivo CSS -->
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilologin.css">
     <title>Iniciar sesión</title>
 </head>
 <body>
 <?php        
 require_once '../helper/autocargar.php';
 // require '../entities/db.php';
-// include '../session/loginSesion.php';
+ include '../session/loginSesion.php';
 //session_start();
 $db = new Database(); // Crea una nueva instancia de la clase Database
 $pdo = $db->getPdo(); // Obtiene el objeto PDO
 
-if (isset($_POST['nombre']) && isset($_POST['contrasena'])) {
+if (isset($_POST['nombre']) && isset($_POST['contrasena']) && !empty($_POST['nombre']) && !empty($_POST['contrasena'])) {
     $username = $_POST['nombre'];
     $password = $_POST['contrasena'];
 
@@ -30,10 +30,15 @@ if (isset($_POST['nombre']) && isset($_POST['contrasena'])) {
       //  $_SESSION['username'] = $user['username'];
         header('Location: ../index.html');
     } else {
-        echo "Nombre de usuario o contraseña incorrectos.";
+        echo "<script>document.getElementById('error-message').style.display = 'flex';</script>";
     }
 }
 ?>
+
+<div id="error-message">
+    <span>Inicio de sesion incorrecto</span>
+    <button onclick="document.getElementById('error-message').style.display = 'none';">Cerrar</button>
+</div>
  <div class="login-div">
 <form action="" method="post">
 <h4>Autoescuela Geffrey</h4>

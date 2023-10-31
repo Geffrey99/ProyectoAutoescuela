@@ -8,9 +8,8 @@
 </head>
 <body>
 <?php
-require '../entities/db.php'; 
-
-$db = new Database(); // Crea una nueva instancia de la clase Database
+require_once '../helper/autocargar.php';
+$db = new Database(); 
 $pdo = $db->getPdo(); 
 
 if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['repeat_password'])) {
@@ -54,7 +53,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['repe
             <button type="submit">Registrarse</button> 
         </form>
         <div class="a">
-        <a href="index.php">Iniciar sesión </a>
+        <a href="inicio.php">Iniciar sesión </a>
         </div>
     </div>
 </form>
