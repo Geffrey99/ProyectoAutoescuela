@@ -4,6 +4,8 @@ window.addEventListener("load", function(){
     btnComenzar.addEventListener("click", comenzar);
 
     function comenzar(){
+           // Ocultar el botón al inicio de la función
+    btnComenzar.style.display = 'none';
         fetch("plantillas/pregunta.html")
         .then(x=>x.text())
         .then(y=>{

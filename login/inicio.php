@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Aquí es donde incluyes tu archivo CSS -->
     <link rel="stylesheet" type="text/css" href="../css/estilologin.css">
     <title>Iniciar sesión</title>
 </head>
 <body>
 <?php        
 require_once '../helper/autocargar.php';
-// require '../entities/db.php';
  include '../session/loginSesion.php';
 //session_start();
 $db = new Database(); // Crea una nueva instancia de la clase Database
@@ -30,15 +28,15 @@ if (isset($_POST['nombre']) && isset($_POST['contrasena']) && !empty($_POST['nom
       //  $_SESSION['username'] = $user['username'];
         header('Location: ../index.html');
     } else {
-        echo "<script>document.getElementById('error-message').style.display = 'flex';</script>";
+        echo "nada ";
     }
 }
 ?>
 
-<div id="error-message">
+<!-- <div id="error-message">
     <span>Inicio de sesion incorrecto</span>
     <button onclick="document.getElementById('error-message').style.display = 'none';">Cerrar</button>
-</div>
+</div> -->
  <div class="login-div">
 <form action="" method="post">
 <h4>Autoescuela Geffrey</h4>
