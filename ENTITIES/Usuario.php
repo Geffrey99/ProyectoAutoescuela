@@ -13,7 +13,7 @@ class usuario {
         $this->rol = $rol;
     }
 
-
+    
     public function getIdUsuario() {
         return $this->id_usuario;
     }

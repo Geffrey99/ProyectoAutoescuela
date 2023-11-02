@@ -28,11 +28,19 @@ function comprobar($contrasena){
 
 
 
-function login($nombre) {
+
+
+function login($nombre,$contrasena) {
     inicia_sesion();
-    guarda_session('user',$nombre);
+    guarda_session('nombre', $nombre);
+}
+
+
+// function login($nombre) {
+//     inicia_sesion();
+//     guarda_session('user',$nombre);
     
         
-    }; 
+//     }; 
     
     ?>

@@ -24,9 +24,11 @@ if (isset($_POST['nombre']) && isset($_POST['contrasena']) && !empty($_POST['nom
     $user = $stmt->fetch();
     if ($user && $password == $user['contrasena']) {
       //  session_start();
-      login($user);
+      login($username, $password);
+
+     // login($user);
       //  $_SESSION['username'] = $user['username'];
-        header('Location: ../index.html');
+        header('Location: ../Vistas/perfilUsuario.PHP');
     } else {
         echo "nada ";
     }
