@@ -28,7 +28,7 @@ if (isset($_POST['nombre']) && isset($_POST['contrasena']) && !empty($_POST['nom
 
      // login($user);
       //  $_SESSION['username'] = $user['username'];
-        header('Location: ../Vistas/perfilUsuario.PHP');
+        header('Location: ../Vistas/perfilAlumno.PHP');
     } else {
         echo "nada ";
     }
