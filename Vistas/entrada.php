@@ -10,7 +10,7 @@
         <h1>Autoescuela Geffrey</h1>
         <button>  <a href="../login/inicio.php">Iniciar Sesion</a> </button>
     </header>
-    <!--menu de navegacion-------------------------------->
+    <!--menu de navegacion---------------------------------->
     <nav>
         <ul>
             <li><a href="#">Contactar</a></li>
@@ -20,14 +20,14 @@
     </nav>
     <!--cuerpo ------------------------------------------->
     <main>
-     
+     <!--
         <h3> <cite> Cualquier momento es bueno para sacarte el carnet !!  </cite> </h3>
         <section>
             <h2 id="fecha"></h2>
             <div id="calendario"></div>
             <h2 id="hora"></h2>
         </section>
-
+-->
     </main>
     <!--pie de pagina-------------------------------------->
     <footer>

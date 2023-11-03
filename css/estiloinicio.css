@@ -6,11 +6,10 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url(eo.jpg);
-
+    background-color: #a8adb366;
+   
+    background-size: cover;
 }
-
-
 
 header, nav, main, footer {
     width: 100%;
@@ -19,8 +18,8 @@ header, nav, main, footer {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #2873bda7;
+    padding: 20px; 
+    background-color: #2873bd3d;
     
 }
 
@@ -41,15 +40,18 @@ button {
 h1 {
     font-family:'Franklin Gothic Medium'; 
     color: #4CAF50; /* Cambia el color a verde */
+   
 }
 
+nav {
+    background-color: #2873bd29;
+}
 
 nav ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding: 20px;
-    background-color: #2873bda7;
+    padding: 20px; 
 }
 main {
     flex-grow: 1;
@@ -57,11 +59,13 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(fotos/banner.jpg);
+  
 }
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #2873bda7;
+    background-color: #2873bd3d;
 }

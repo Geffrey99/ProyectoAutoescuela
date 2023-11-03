@@ -5,7 +5,8 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    background-image: url(fotos/eo.jpg);
+    background-image: url(fotos/eou.jpg);
+    background-size: cover;
 }
 .login-div {
     display: flex;
