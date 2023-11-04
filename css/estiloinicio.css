@@ -7,7 +7,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #a8adb366;
-   
     background-size: cover;
 }
 
@@ -32,7 +31,7 @@ button {
     text-decoration: none; /* Sin subrayado */
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 40px; /* Añade un margen a la derecha */
     cursor: pointer;
     border: none; /* Sin borde */
 }
@@ -40,7 +39,7 @@ button {
 h1 {
     font-family:'Franklin Gothic Medium'; 
     color: #4CAF50; /* Cambia el color a verde */
-   
+    margin-right: 40px; /* Añade un margen a la derecha */
 }
 
 nav {
@@ -53,7 +52,7 @@ nav ul {
     list-style-type: none;
     padding: 20px; 
 }
-main {
+main {  
     flex-grow: 1;
     display: flex;
     flex-direction: column;

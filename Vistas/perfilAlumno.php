@@ -15,9 +15,9 @@
             inicia_sesion();
             if (isset($_POST['logout'])){
                 cierra_sesion();
-                header('Location: ../login/inicio.php');
+                header('Location: ../Vistas/home.php');
             } else {
-                echo "Hola, " . $_SESSION['nombre'];
+                echo "Bienvenido , " . $_SESSION['nombre'];
             }
             ?>
         </div>

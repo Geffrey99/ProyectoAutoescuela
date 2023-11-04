@@ -1,32 +1,102 @@
 [
     {
         "numero": 1,
-        "categoria": "motorsddddddd",
-        "descripcion": "¿que es el par motor?",
+        "categoria": "Motor",
+        "descripcion": "¿Qué tipo de motor tiene un coche eléctrico?",
         "opciones": [
-            "Opción 1",
-            "Opción 2",
-            "Opción 3"
+            "Motor de combustión interna",
+            "Motor de inducción",
+            "Motor de vapor"
         ]
     },
     {
         "numero": 2,
-        "categoria": "circulacion",
-        "descripcion": "cfredd",
+        "categoria": "Transmisión",
+        "descripcion": "¿Qué función tiene el embrague en un coche manual?",
         "opciones": [
-            "Opción 1",
-            "Opción 2",
-            "Opción 3"
+            "Conectar y desconectar el motor de las ruedas",
+            "Regular la velocidad del motor",
+            "Cambiar la dirección de las ruedas"
         ]
     },
     {
         "numero": 3,
-        "categoria": "carretera",
-        "descripcion": "ddddd",
+        "categoria": "Frenos",
+        "descripcion": "¿Qué sistema de frenado es más eficiente: el de disco o el de tambor?",
         "opciones": [
-            "Opción 1",
-            "Opción 2",
-            "Opción 3"
+            "El de disco, porque disipa mejor el calor",
+            "El de tambor, porque tiene más superficie de contacto",
+            "Ambos son igual de eficientes"
+        ]
+    },
+    {
+        "numero": 4,
+        "categoria": "Neumáticos",
+        "descripcion": "¿Qué significa la letra R en la medida de un neumático, como por ejemplo 205/55 R16?",
+        "opciones": [
+            "Que el neumático es radial",
+            "Que el neumático es reforzado",
+            "Que el neumático es reciclado"
+        ]
+    },
+    {
+        "numero": 5,
+        "categoria": "Suspensión",
+        "descripcion": "¿Qué componente de la suspensión se encarga de absorber los impactos y las vibraciones?",
+        "opciones": [
+            "El amortiguador",
+            "El muelle",
+            "La barra estabilizadora"
+        ]
+    },
+    {
+        "numero": 6,
+        "categoria": "Dirección",
+        "descripcion": "¿Qué ventaja tiene la dirección asistida frente a la dirección convencional?",
+        "opciones": [
+            "Reduce el esfuerzo necesario para girar el volante",
+            "Aumenta la precisión y la estabilidad al tomar las curvas",
+            "Ambas son ventajas de la dirección asistida"
+        ]
+    },
+    {
+        "numero": 7,
+        "categoria": "Aerodinámica",
+        "descripcion": "¿Qué función tiene el alerón trasero en algunos coches deportivos?",
+        "opciones": [
+            "Generar una fuerza hacia abajo que mejora la adherencia",
+            "Reducir la resistencia al aire que frena el coche",
+            "Ambas son funciones del alerón trasero"
+        ]
+    },
+    {
+        "numero": 8,
+        "categoria": "Seguridad",
+        "descripcion": "¿Qué sistema de seguridad activa evita que las ruedas se bloqueen al frenar bruscamente?",
+        "opciones": [
+            "El ABS (Anti-lock Braking System)",
+            "El ESP (Electronic Stability Program)",
+            "El EBD (Electronic Brakeforce Distribution)"
+        ]
+    },
+    {
+        "numero": 9,
+        "categoria": "Consumo",
+        "descripcion": "¿Qué factor influye más en el consumo de combustible de un coche?",
+        "opciones": [
+            "El peso del coche",
+            "La velocidad del coche",
+            "La aerodinámica del coche"
+        ]
+    },
+    {
+        "numero": 10,
+        "categoria": "Medio ambiente",
+        "descripcion": "¿Qué tipo de coche emite menos gases contaminantes a la atmósfera?",
+        "opciones": [
+            "Un coche de gasolina",
+            "Un coche diésel",
+            "Un coche híbrido"
         ]
     }
 ]

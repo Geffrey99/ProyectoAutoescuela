@@ -1,31 +1,55 @@
 window.addEventListener("load", function(){
-    var btnComenzar=document.getElementById("comenzar");
-    var divExamen=document.getElementById("examen");
+    var btnComenzar = document.getElementById("comenzar");
+    var divExamen = document.getElementById("examen");
     btnComenzar.addEventListener("click", comenzar);
 
     function comenzar(){
-           // Ocultar el botón al inicio de la función
-    btnComenzar.style.display = 'none';
-        fetch("plantillas/pregunta.html")
-        .then(x=>x.text())
-        .then(y=>{
-            var contenedor=document.createElement("div");
-            contenedor.innerHTML=y;
-            console.log(contenedor);
-            var pregunta = contenedor.firstChild;
-            fetch("servidor/preguntas.json")
-            .then(x=>x.json())
-            .then(y=>{
-                for(let i=0;i<y.length;i++){
-                    var pregAux=pregunta.cloneNode(true);
-                    pregAux.getElementsByClassName("numero")[0].innerHTML=y[i].numero;
-                    pregAux.getElementsByClassName("categoria")[0].innerHTML=y[i].categoria;
-                    pregAux.getElementsByClassName("descripcion")[0].innerHTML=y[i].descripcion;
-                  divExamen.appendChild(pregAux);
-                }
-            })
- 
+        // Ocultar el botón al inicio de la función
+        btnComenzar.style.display = 'none';
 
-        })
+        fetch("servidor/preguntas.json")
+        .then(x => x.json())
+        .then(preguntas => {
+            preguntas.forEach(pregunta => {
+                var divPregunta = document.createElement('div');
+                divPregunta.className = 'pregunta';
+
+                var h2 = document.createElement('h2');
+                h2.innerHTML = `<span class="numero">${pregunta.numero}</span>. <span class="categoria">${pregunta.categoria}</span>`;
+                divPregunta.appendChild(h2);
+
+                var p = document.createElement('p');
+                p.className = 'descripcion';
+                p.textContent = pregunta.descripcion;
+                divPregunta.appendChild(p);
+
+                var divOpciones = document.createElement('div');
+                divOpciones.className = 'opciones';
+                pregunta.opciones.forEach((opcion, index) => {
+                    var input = document.createElement('input');
+                    input.type = 'radio';
+                    input.id = `opcion${pregunta.numero}_${index + 1}`;
+                    input.name = `opcion${pregunta.numero}`;
+                    input.value = `opcion${index + 1}`;
+                    divOpciones.appendChild(input);
+
+                    var label = document.createElement('label');
+                    label.htmlFor = input.id;
+                    label.textContent = opcion;
+                    divOpciones.appendChild(label);
+
+                    divOpciones.appendChild(document.createElement('br'));
+                });
+                divPregunta.appendChild(divOpciones);
+
+                var button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'descartar';
+                button.textContent = 'Descartar';
+                divPregunta.appendChild(button);
+
+                divExamen.appendChild(divPregunta);
+            });
+        });
     }
-})
+});
