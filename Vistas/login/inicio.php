@@ -7,12 +7,13 @@
     <title>Iniciar sesión</title>
 </head>
 <body>
-<?php        
+    
+<?php
 require_once '../../helper/autocargar.php';
- include '../../session/loginSesion.php';
-//session_start();
-$db = new Database(); // Crea una nueva instancia de la clase Database
-$pdo = $db->getPdo(); // Obtiene el objeto PDO
+include '../../session/loginSesion.php';
+
+$db = new Database();
+$pdo = $db->getPdo();
 
 if (isset($_POST['nombre']) && isset($_POST['contrasena']) && !empty($_POST['nombre']) && !empty($_POST['contrasena'])) {
     $username = $_POST['nombre'];
@@ -22,23 +23,23 @@ if (isset($_POST['nombre']) && isset($_POST['contrasena']) && !empty($_POST['nom
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$username]);
     $user = $stmt->fetch();
-    if ($user && $password == $user['contrasena']) {
-      //  session_start();
-      login($username, $password);
 
-     // login($user);
-      //  $_SESSION['username'] = $user['username'];
-        header('Location: ../perfiles/perfilAlumno.PHP');
+    if ($user && $password == $user['contrasena']) {
+        login($username, $password);
+
+        if ($user['rol'] == 'profesor') {
+            header('Location: ../perfiles/perfilProfesor.php');
+        } elseif ($user['rol'] == 'alumno') {
+            header('Location: ../perfiles/perfilAlumno.php');
+        } elseif ($user['rol'] == 'admi') {
+            header('Location: ../perfiles/perfilAdministrador.php');
+        }
     } else {
-        echo "nada ";
+        echo "Inicio de sesión mal";
     }
 }
 ?>
 
-<!-- <div id="error-message">
-    <span>Inicio de sesion incorrecto</span>
-    <button onclick="document.getElementById('error-message').style.display = 'none';">Cerrar</button>
-</div> -->
  <div class="login-div">
 <form action="" method="post">
 <h4>Autoescuela Geffrey</h4>

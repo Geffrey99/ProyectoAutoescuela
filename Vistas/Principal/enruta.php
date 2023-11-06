@@ -6,8 +6,8 @@ if (isset($_GET['menu'])) {
     if ($_GET['menu'] == "login") {
         require_once './Vistas/Login/inicio.php';
     }
-    if ($_GET['menu'] == "cerrarsesion") {
-        require_once './Vistas/Login/cerrarsesion.php';
+    if ($_GET['menu'] == "registro") {
+        require_once './Vistas/login/registro.php';
      
     }
     if ($_GET['menu'] == "contacto") {

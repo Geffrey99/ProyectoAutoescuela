@@ -3,7 +3,7 @@
 <head>
 
     <link rel="stylesheet" type="text/css" href="../../css/perfilAlumno.css">
-        <script src="./js/perfilAlumno.js"></script>
+        <script src="../../js/perfilAlumno.js"></script>
 
 </head>
 <body>
@@ -15,7 +15,7 @@
             inicia_sesion();
             if (isset($_POST['logout'])){
                 cierra_sesion();
-                header('Location: ../Vistas/home.php');
+                header('Location: ../../index.html');
             } else {
                 echo "Bienvenido , " . $_SESSION['nombre'];
             }
@@ -24,8 +24,21 @@
         <button id="logout">Logout</button>
     </header>
     <main>
-        <aside>Contenido del aside</aside>
-        <section>Contenido de la sección</section>
+        <aside>
+            <div>
+                <button>Hacer examen</button>
+            </div>
+            <div>
+                <button>
+                    Visualizar correccion
+                </button>
+            </div>
+        </aside>
+        <section>
+            <div>
+                <button>Examen de entrenamiento</button>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Email: AutoescuelaGeffrey@correo.com</p>

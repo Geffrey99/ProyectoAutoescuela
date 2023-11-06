@@ -1,8 +1,11 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+   /* align-items: center;
     justify-content: space-between;
+    */height: 100vh;
+    margin: 0;
+    padding: 0;
     background-image: url(fotos/R.jpg);
 }
 header {
@@ -16,6 +19,11 @@ main {
     justify-content: space-between;
     width: 100%;
     background-color: chocolate;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    columns: 1;
 }
 footer {
     display: flex;
