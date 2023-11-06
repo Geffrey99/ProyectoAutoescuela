@@ -17,7 +17,7 @@ header, nav, main, footer {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px; 
+   padding: 20px; 
     background-color: #2873bd3d;
     
 }
@@ -50,7 +50,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding: 20px; 
+   padding: 20px;  
 }
 main {  
     flex-grow: 1;

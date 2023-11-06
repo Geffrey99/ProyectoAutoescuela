@@ -2,15 +2,15 @@
 <html>
 <head>
 
-    <link rel="stylesheet" type="text/css" href="../css/perfilAlumno.css">
-        <script src="../js/perfilAlumno.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/perfilAlumno.css">
+        <script src="./js/perfilAlumno.js"></script>
 
 </head>
 <body>
     <header>
         <div id="nombre">
             <?php
-            include '../session/loginSesion.php';  
+            include '../../session/loginSesion.php';
 
             inicia_sesion();
             if (isset($_POST['logout'])){

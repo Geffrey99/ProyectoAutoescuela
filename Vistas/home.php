@@ -8,13 +8,13 @@
     <!--cabecera----------------------------------------->
     <header>
         <h1>Autoescuela Geffrey</h1>
-        <button>  <a href="../login/inicio.php">Iniciar Sesion</a> </button>
+        <button>  <a href="login/inicio.php">Iniciar Sesion</a> </button>
     </header>
     <!--menu de navegacion---------------------------------->
     <nav>
         <ul>
             <li><a href="#">Contactar</a></li>
-            <li><a href="#">Registro</a></li>
+            <li><a href="login/registro.php">Registro</a></li>
             <li><a href="#">Quienes somos</a></li>
         </ul>
     </nav>

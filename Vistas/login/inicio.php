@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/estilologin.css">
+    <link rel="stylesheet" type="text/css" href="../../css/estilologin.css">
     <title>Iniciar sesión</title>
 </head>
 <body>
 <?php        
-require_once '../helper/autocargar.php';
- include '../session/loginSesion.php';
+require_once '../../helper/autocargar.php';
+ include '../../session/loginSesion.php';
 //session_start();
 $db = new Database(); // Crea una nueva instancia de la clase Database
 $pdo = $db->getPdo(); // Obtiene el objeto PDO
@@ -28,7 +28,7 @@ if (isset($_POST['nombre']) && isset($_POST['contrasena']) && !empty($_POST['nom
 
      // login($user);
       //  $_SESSION['username'] = $user['username'];
-        header('Location: ../Vistas/perfilAlumno.PHP');
+        header('Location: ../perfiles/perfilAlumno.PHP');
     } else {
         echo "nada ";
     }
