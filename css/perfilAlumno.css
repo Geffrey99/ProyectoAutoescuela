@@ -40,24 +40,23 @@ aside button {
     font-size: xx-large;
     border-style: ridge;
     border-radius: 20%;
+    margin-top: 30%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-aside #correccion button {
-    margin-left: 30%;
-    margin-top: 30%;
+aside #correccion button { 
     border-top-color: red;
 }
 
 aside #examen button {
-    margin-left: 10%;
-    margin-top: 30%;
+    
     border-top-color: greenyellow;
 }
 
-aside {
+ aside {
     display: flex;
-  margin-left: 10%;
+    flex-direction: row;
+    margin-left: 10px;
     justify-content: space-between;
 }
 
@@ -66,8 +65,8 @@ section button {
     border-color: antiquewhite;
     border-top-color: aqua;
     font-family: Georgia, 'Times New Roman', Times, serif;
-margin-right: 20%;
-margin-top: 30%;
+    margin-right: 20%;
+    margin-top: 30%;
 }
 
 

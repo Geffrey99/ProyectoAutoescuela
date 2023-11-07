@@ -30,7 +30,7 @@ if (isset($_POST['nombre']) && isset($_POST['contrasena']) && !empty($_POST['nom
         if ($user['rol'] == 'profesor') {
             header('Location: ../perfiles/perfilProfesor.php');
         } elseif ($user['rol'] == 'alumno') {
-            header('Location: ../perfiles/perfilAlumno.php');
+            header('Location: ../perfiles/layoutUsuario.php');
         } elseif ($user['rol'] == 'admi') {
             header('Location: ../perfiles/perfilAdministrador.php');
         }

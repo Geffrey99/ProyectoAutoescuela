@@ -23,6 +23,7 @@ header {
 }
 
 
+
 button {
     background-color: #4CAF50; /* Color de fondo */
     color: white; /* Color del texto */
@@ -39,11 +40,12 @@ button {
 h1 {
     font-family:'Franklin Gothic Medium'; 
     color: #4CAF50; /* Cambia el color a verde */
-    margin-right: 40px; /* Añade un margen a la derecha */
+    margin-left: 60px;
 }
 
 nav {
     background-color: #2873bd29;
+
 }
 
 nav ul {
@@ -59,6 +61,7 @@ main {
     align-items: center;
     justify-content: center;
     background-image: url(fotos/banner.jpg);
+
   
 }
 footer {
