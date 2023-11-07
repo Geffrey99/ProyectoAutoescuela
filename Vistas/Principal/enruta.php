@@ -4,10 +4,12 @@ if (isset($_GET['menu'])) {
         require_once 'index.php';
     }
     if ($_GET['menu'] == "login") {
-        require_once './Vistas/Login/inicio.php';
+        header ('Location: ./Vistas/login/inicio.php');
+        //require_once './Vistas/Login/inicio.php';
     }
     if ($_GET['menu'] == "registro") {
-        require_once './Vistas/login/registro.php';
+       header ('Location: ./Vistas/login/registro.php');
+        // require_once './Vistas/login/registro.php';
      
     }
     if ($_GET['menu'] == "contacto") {

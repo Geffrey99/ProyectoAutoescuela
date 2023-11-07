@@ -3,7 +3,7 @@
 <head>
 
     <link rel="stylesheet" type="text/css" href="../../css/perfilAlumno.css">
-        <script src="../../js/perfilAlumno.js"></script>
+        <script src="../../js/perfilAlumno.js"></script> 
 
 </head>
 <body>
@@ -14,21 +14,25 @@
 
             inicia_sesion();
             if (isset($_POST['logout'])){
-                cierra_sesion();
-                header('Location: ../../index.html');
+               
             } else {
-                echo "Bienvenido , " . $_SESSION['nombre'];
+                echo "<h2> Bienvenido , " . $_SESSION['nombre'];
             }
             ?>
         </div>
-        <button id="logout">Logout</button>
+        <div id="titulo">
+         <h1>Autoescuela Geffrey</h1> 
+        </div>
+        <div id="logout">
+        <button type="submit" id="logout" name="logout">Logout</button>
+        </div>
     </header>
     <main>
         <aside>
-            <div>
-                <button>Hacer examen</button>
+            <div id="examen">
+                <button >Hacer examen</button>
             </div>
-            <div>
+            <div id="correccion">
                 <button>
                     Visualizar correccion
                 </button>
