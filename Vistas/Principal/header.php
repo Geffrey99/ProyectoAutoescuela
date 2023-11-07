@@ -1,5 +1,5 @@
 <header>
-        <h1> Autoescuela Geffrey </h1>
+        <h1> AUTOESCUELA.GEFFREY </h1>
         <button>  <a href="./vistas/login/inicio.php">Iniciar Sesion</a> </button>
     </header>
      <!--menu de navegacion---------------------------------->  

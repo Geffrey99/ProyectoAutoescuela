@@ -12,10 +12,9 @@
             ?>
         </div>
         <div id="titulo">
-         <h1>Autoescuela Geffrey</h1> 
+         <h1>AUTOESCUELA.GEFFREY</h1> 
         </div>
         <div id="logout">
         <button type="submit" id="logout" name="logout">Logout</button>
         </div>
     </header>
-    

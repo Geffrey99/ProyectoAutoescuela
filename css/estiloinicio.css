@@ -32,14 +32,14 @@ button {
     text-decoration: none; /* Sin subrayado */
     display: inline-block;
     font-size: 16px;
-    margin: 4px 40px; /* Añade un margen a la derecha */
+    margin: 4px 40px; 
     cursor: pointer;
-    border: none; /* Sin borde */
+    border: none; 
 }
 
 h1 {
     font-family:'Franklin Gothic Medium'; 
-    color: #4CAF50; /* Cambia el color a verde */
+    color: #4CAF50; 
     margin-left: 60px;
 }
 

@@ -10,18 +10,29 @@ body {
 }
 header {
     display: flex;
-    justify-content: space-between;
+      justify-content: space-between;
+    /* justify-content: space-around; */
     width: 100%;
-    background-color: rgb(175, 177, 174);
-    height: 20%; 
+    background-color: rgb(165, 162, 162);
+
 }
 
-h1 {
+header #titulo h1 {
     margin-top: 20%;
+    margin-inline-start: auto;
+    font-family:'Franklin Gothic Medium'; 
+  font-size: xx-large;
+  color: rgb(76, 141, 11);
+ 
+}
+
+header #titulo {
+    margin-right: 15%;
 }
 
 h2 {
     margin-left: 30%;
+    font-style: oblique;
 }
 
 #logout button {
@@ -35,7 +46,7 @@ h2 {
 #logout button:hover {
     background-color: red;
 }
-
+/* 
 aside button {
     font-size: xx-large;
     border-style: ridge;
@@ -67,7 +78,7 @@ section button {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-right: 20%;
     margin-top: 30%;
-}
+} */
 
 
 
@@ -86,4 +97,31 @@ footer {
     align-items: center;
     width: 100%;
     background-color: rgba(175, 177, 174, 0.919);
+}
+
+
+
+ nav { 
+    background-color: rgba(177, 174, 174, 0.945);
+
+} 
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+   padding: 20px;  
+}
+
+nav ul button {
+    font-size: xx-large;
+    border-color: antiquewhite;
+    border-top-color: aqua;
+    border-radius: 5px;
+    background-color: azure;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul button:hover{
+background-color: chartreuse;
 }
