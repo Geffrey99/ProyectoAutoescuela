@@ -8,14 +8,16 @@
     <title>Autoescuela Geffrey</title>
 </head>
 <body>
+   
     <?php
+  
         require_once 'header.php';
        
     ?>
     <section>
         <div id="cuerpo">
         <?php
-        
+     
           require_once 'enruta.php';
         
         ?>
@@ -23,7 +25,9 @@
     </section>
 
     <?php
-        require_once 'main.php';
+      
+        // require_once 'main.php';
+        
         require_once 'footer.php';
     ?>
 
