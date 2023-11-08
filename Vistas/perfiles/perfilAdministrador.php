@@ -17,7 +17,7 @@
         <div id="cuerpo">
         <?php
         
-        //   require_once 'enruta.php';
+           require_once 'enrutaperfil.php';
         
         ?>
         </div>

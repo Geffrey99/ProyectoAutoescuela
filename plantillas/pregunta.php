@@ -11,6 +11,8 @@
          <label for="opcion3">Opción 3</label>
      </div>
 </div> -->
+
+
 <form action="submit_exam.php" method="post">
     <div id="exam">
         <!-- Pregunta 1 -->
@@ -148,3 +150,4 @@
     </div>
     <input type="submit" value="Enviar">
 </form>
+
