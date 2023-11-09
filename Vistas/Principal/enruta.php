@@ -5,13 +5,13 @@ if (isset($_GET['menu'])) {
     }
     if ($_GET['menu'] == "login") {
         // header ('Location: ./Vistas/login/inicio.php');
-        ob_clean(); //ME LIMPIA EL DISEÑO ANTERIOR Y ME MUESTRA EL DISEÑO QUE LE HE PUESTO A REGISTRO
-        require_once './Vistas/Login/inicio.php';
+       // ob_clean(); //ME LIMPIA EL DISEÑO ANTERIOR Y ME MUESTRA EL DISEÑO QUE LE HE PUESTO A REGISTRO
+        require_once './Vistas/informacion/login.php';
     }
     if ($_GET['menu'] == "registro") {
       // header ('Location: ./Vistas/login/registro.php');
-      ob_clean(); 
-      require_once './Vistas/login/registro.php';
+     // ob_clean(); 
+      require_once './Vistas/informacion/registro.php';
       
    
     }
