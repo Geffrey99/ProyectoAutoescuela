@@ -61,10 +61,14 @@ button {
     align-items: center;
 }
 
-#footer {
+/* footer{
     display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #2873bd3d;
+    background-color: #2873bd;
+    height: 10%;
+    margin-top: auto;
+} */
+footer {
+    display: none;
 }

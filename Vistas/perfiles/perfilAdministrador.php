@@ -10,14 +10,14 @@
 </head>
 <body>
     <?php
-        require_once 'headerusuario.php';
+        require_once './headerusuario.php';
        
     ?>
     <section>
         <div id="cuerpo">
         <?php
         
-           require_once 'enrutaperfil.php';
+           require_once './enrutaperfil.php';
         
         ?>
         </div>

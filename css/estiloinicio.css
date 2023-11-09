@@ -54,10 +54,22 @@ h1 {
 nav ul {
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
    padding: 20px;  
+   
   
 }
+
+a {
+    text-decoration: none;
+    width: 50%;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4CAF50;
+}
+
 main {  
     flex-grow: 1;
     display: flex;
