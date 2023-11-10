@@ -1,9 +1,8 @@
 <header>
-        <h1> AUTOESCUELA.GEFFREY </h1>
+        <h1>  <a href="?menu=inicio"> AUTOESCUELA.GEFFREY</a> </h1>
         <button>  <a href="?menu=login">Iniciar Sesion</a> </button>
    
      <!--menu de navegacion---------------------------------->  
-  
     
     </header>
     <nav>

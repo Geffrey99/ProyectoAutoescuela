@@ -7,7 +7,7 @@
     <input type="contrasena" id="contrasena" name="contrasena">
     <button type="submit">Iniciar sesión</button>
     <div class="a">
-        <a href="registro.php">Registrarse</a>
+        <a href="?menu=registro">Registrarse</a>
         </div>
     </div>
 </form>

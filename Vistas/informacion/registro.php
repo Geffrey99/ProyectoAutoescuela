@@ -7,7 +7,7 @@
             <button type="submit">Registrarse</button> 
         </form>
         <div class="a">
-        <a href="inicio.php">Iniciar sesión </a>
+        <a href="?menu=login">Iniciar sesión </a>
         </div>
     </div>
 </form>
