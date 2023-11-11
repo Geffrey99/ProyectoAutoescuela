@@ -6,7 +6,9 @@ if (isset($_GET['menu'])) {
     if ($_GET['menu'] == "login") {
         // header ('Location: ./Vistas/login/inicio.php');
        // ob_clean(); //ME LIMPIA EL DISEÑO ANTERIOR Y ME MUESTRA EL DISEÑO QUE LE HE PUESTO A REGISTRO
-        require_once './Vistas/informacion/login.php';
+       require_once './vistas/login/intro.php';
+       require_once './Vistas/informacion/login.php';
+        verificarUsuario($_POST['nombre'], $_POST['contrasena']);
     }
     if ($_GET['menu'] == "registro") {
       // header ('Location: ./Vistas/login/registro.php');
