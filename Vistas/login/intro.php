@@ -18,7 +18,8 @@ function verificarUsuario($nombre, $contrasena) {
         } else {
             echo "Inicio de sesión incorrecto";
         }
-
+    }
+}
 
 
 
@@ -38,4 +39,4 @@ function redirigirSegunRol($rol) {
     }
 }
 
-
+?>
