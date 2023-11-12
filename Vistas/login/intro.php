@@ -26,7 +26,8 @@ function verificarUsuario($nombre, $contrasena) {
 function redirigirSegunRol($rol) {
     switch ($rol) {
         case 'alumno':
-            header('Location: ./Vistas/perfiles/perfilAlumno.php');
+            require_once './Vistas/perfiles/perfilAlumno.php';
+          //  header('Location: ./Vistas/perfiles/perfilAlumno.php');
             break;
         case 'profesor':
             header('Location: ./Vistas/perfiles/perfilProfesor.php');

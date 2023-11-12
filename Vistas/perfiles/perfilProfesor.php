@@ -11,7 +11,7 @@
 <body>
     <?php
         require_once 'headerusuario.php';
-       
+        require_once 'navProfesor.php';
     ?>
     <section>
         <div id="cuerpo">

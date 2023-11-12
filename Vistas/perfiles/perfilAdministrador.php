@@ -11,6 +11,7 @@
 <body>
     <?php
         require_once './headerusuario.php';
+        require_once 'navAdministrador.php';
        
     ?>
     <section>
