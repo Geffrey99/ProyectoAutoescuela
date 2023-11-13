@@ -1,5 +1,8 @@
 <?php
 
+include_once 'Database.PHP';
+
+
 class usuario {
      private $id_usuario;
      private $nombre;
@@ -43,6 +46,9 @@ class usuario {
     public function setRol($rol) {
         $this->rol = $rol;
     }
+
+
+
 }
 
 
