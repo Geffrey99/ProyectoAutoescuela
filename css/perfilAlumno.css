@@ -6,7 +6,8 @@ body {
     */height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url(fotos/cssss.jpg);
+    /* background-image: url(fotos/cssss.jpg); */
+    background-color: #9aa6b190;
     background-size: cover;
    
 }
@@ -137,7 +138,7 @@ nav ul button:hover{
 background-color: chartreuse;
 }
 
-nav ul li button:active{ background-color: chartreuse; }
+nav ul button:active{ background-color: chartreuse; }
 
 a {
     text-decoration: none;

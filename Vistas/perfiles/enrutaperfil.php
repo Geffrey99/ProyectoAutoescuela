@@ -12,8 +12,8 @@ if (isset($_GET['menu'])) {
          require_once './Vistas/login/registro.php';
      
     }
-    if ($_GET['menu'] == "examen") {
-        require_once '../../examen.php';
+    if ($_GET['menu'] == "participantes") {
+        require_once '../../REPOSITORIO/usuariosdb.php';
      
     }
     if ($_GET['menu'] == "correcciones") {
@@ -23,7 +23,10 @@ if (isset($_GET['menu'])) {
     if ($_GET['menu']=='prototipo'){
         require_once '';
     }
-
+    if ($_GET['menu']=='preguntas'){
+        require_once '../../plantillas/crearPreguntas.php';
+       
+    }
     
 
     
