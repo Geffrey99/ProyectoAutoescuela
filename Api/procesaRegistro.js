@@ -11,7 +11,7 @@ function processUser(event, username, password, role) {
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.onload = function() {
         if (this.status == 200) {
-            // Recarga los usuarios pendientes después de procesar una solicitud
+            //me recarga la pagina al terminar de procesar los registros. 
             location.reload();
         }
     };

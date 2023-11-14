@@ -20,7 +20,12 @@ Class Usuarioo extends Database {
 
     }
 
+function nuevoUsuario($usuario) {
+    $query =$this->getPdo()->prepare('INSERT INTO  Usuario (nombre, contrasena, rol) VALUES (:nombre, :contrasena, :rol');
+        $query->execute(['nombre'=> $usuario['nombre'], 'contrasena' =>$usuario['contrasena'],'rol'=>$usuario['rol']]);
 
+       return $query;
+}
 
 
 }
