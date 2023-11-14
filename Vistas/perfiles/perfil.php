@@ -4,6 +4,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../css/perfilAlumno.css">
         <script src="../../js/perfilAlumno.js"></script> 
+       
 
 </head>
 <body>

@@ -27,6 +27,10 @@ if (isset($_GET['menu'])) {
         require_once '../../plantillas/crearPreguntas.php';
        
     }
+    if ($_GET['menu']=='registros'){
+        require_once '../../plantillas/registros.php';
+       
+    }
     
 
     
