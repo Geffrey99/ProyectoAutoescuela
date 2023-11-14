@@ -9,7 +9,7 @@ require_once './vistas/login/intro.php';
     <input type="text" id="nombre" name="nombre">
     <label for="password">Contraseña</label>
     <input type="contrasena" id="contrasena" name="contrasena">
-    <button type="submit" href="/perfil/">Iniciar sesión</button>
+    <button type="submit" href="">Iniciar sesión</button>
     <div class="a">
         <a href="?menu=registro">Registrarse</a>
         </div>

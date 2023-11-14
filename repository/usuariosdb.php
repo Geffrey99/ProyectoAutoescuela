@@ -1,6 +1,6 @@
 <?php
 require_once '../../helper/autocargar.php';
-require_once '../../helper/validator.php';
+
 
 $db = new Database();
 $pdo = $db->getPdo();

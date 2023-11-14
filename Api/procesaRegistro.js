@@ -1,9 +1,9 @@
-// Función para procesar una solicitud de usuario
-function processUser(event, username, password, role) {
+// Procesa el registro de usuario
+function procesaUsuario(event, username, password, role) {
     // Previene el envío normal del formulario
     event.preventDefault();
 
-    // Determina la acción basada en el botón que se presionó
+    // Determina la acción basada en el botón que presionó el usuario {aceptar o rechazar}
     var action = event.submitter.value;
 
     var xhr = new XMLHttpRequest();
@@ -17,16 +17,4 @@ function processUser(event, username, password, role) {
     };
     xhr.send('username=' + username + '&password=' + password + '&role=' + role + '&action=' + action);
 
-//funcion para cargar los usuarios pendienteees
-// function loadPendingUsers() {
-//     var xhr = new XMLHttpRequest();
-//     xhr.open('GET', '../../api/usuariosPendientes.php', true);
-//     xhr.onload = function() {
-//         if (this.status == 200) {
-//             document.getElementById('userList').innerHTML = this.responseText;
-//         }
-//     };
-//     xhr.send();
-
-// }
  }

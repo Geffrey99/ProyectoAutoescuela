@@ -14,7 +14,7 @@
             echo 'No hay solicitudes.';
         } else {
             foreach ($users as $user) {
-                echo '<form onsubmit="processUser(event, \''.$user['nombre'].'\', \''.$user['contrasena'].'\', this.role.value)" method="post">';
+                echo '<form onsubmit="procesaUsuario(event, \''.$user['nombre'].'\', \''.$user['contrasena'].'\', this.role.value)" method="post">';
                 echo '<label for="username">Nombre de usuario:</label><br>';
                 echo '<input type="text" id="username" name="username" value="'.$user['nombre'].'" required readonly><br>';
                 echo '<label for="password">Contraseña:</label><br>';

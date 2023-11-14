@@ -13,7 +13,7 @@ if (isset($_GET['menu'])) {
      
     }
     if ($_GET['menu'] == "participantes") {
-        require_once '../../REPOSITORIO/usuariosdb.php';
+        require_once '../../repository/usuariosdb.php';
      
     }
     if ($_GET['menu'] == "correcciones") {
