@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <script src="../../api/procesaRegistro.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/estiloregistros.css">
 <body> 
     <?php
         // include_once './autocargar.php';

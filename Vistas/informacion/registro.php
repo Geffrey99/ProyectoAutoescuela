@@ -1,5 +1,5 @@
 <div class="login-div">
-        <form action="./repositorio/registrosRepositorio.php" method="post">
+        <form action="./repository/registrosRepositorio.php" method="post">
             <h4> Autoescuela Geffrey </h4>
             <input type="text" name="username" placeholder="Nombre de usuario" required>
             <input type="password" name="password" placeholder="Contraseña" required>

@@ -1,5 +1,5 @@
 <?php
-    require_once '../ENTITIES/Database.PHP';
+require_once '../helper/autocargar.php';   
 
     $db = new Database();
 
@@ -11,6 +11,10 @@
 
     $stmt = $db->getPdo()->prepare("INSERT INTO UsuarioPendiente (nombre, contrasena) VALUES (?, ?)");
     $stmt->execute([$username, $password]);
+
+    
+    header('Location: ./../index.php');
+    exit;
 ?>
 
 

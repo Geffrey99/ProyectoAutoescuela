@@ -7,7 +7,7 @@ function procesaUsuario(event, username, password, role) {
     var action = event.submitter.value;
 
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', '../../repositorio/procesarRegistros.php', true);
+    xhr.open('POST', '../../repository/procesarRegistros.php', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.onload = function() {
         if (this.status == 200) {

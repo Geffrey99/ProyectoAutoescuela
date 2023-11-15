@@ -3,7 +3,7 @@
 
     function autocargar($clase){
         $entities=$_SERVER['DOCUMENT_ROOT']."/ProyectoAutoescuela/entities/".$clase.'.php';
-        $repositorio=$_SERVER['DOCUMENT_ROOT']."/ProyectoAutoescuela/repositorio/".$clase.'.php';
+        $repositorio=$_SERVER['DOCUMENT_ROOT']."/ProyectoAutoescuela/repository/".$clase.'.php';
         $session=$_SERVER['DOCUMENT_ROOT']."/ProyectoAutoescuela/session/".$clase.'.php';
 
         if(file_exists($entities)){

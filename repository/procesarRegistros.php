@@ -1,5 +1,5 @@
 <?php
-    require_once '../ENTITIES/Database.PHP';
+require_once '../helper/autocargar.php';   
 
     $db = new Database();
 
