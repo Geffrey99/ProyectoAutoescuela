@@ -1,6 +1,6 @@
 
 <?php
-require_once './helper/autocargar.php';
+require_once './session/loginSesion.php';
 
 function verificarUsuario($nombre, $contrasena) {
     $db = new Database();
@@ -13,7 +13,8 @@ function verificarUsuario($nombre, $contrasena) {
         $user = $stmt->fetch();
 
         if ($user && $contrasena == $user['contrasena']) {
-            login($nombre, $contrasena);
+            $sesion = new Sesion();
+            $sesion->login($nombre, $contrasena);
             redirigirSegunRol($user['rol']);
         } else {
             echo "Inicio de sesión incorrecto";
@@ -27,13 +28,12 @@ function redirigirSegunRol($rol) {
     switch ($rol) {
         case 'alumno':
             require_once './Vistas/perfiles/perfilAlumno.php';
-          //  header('Location: ./Vistas/perfiles/perfilAlumno.php');
             break;
         case 'profesor':
             require_once './Vistas/perfiles/perfilProfesor.php';
             break;
         case 'admi':
-            header('Location: ./Vistas/perfiles/perfilAdministrador.php');
+            require_once './Vistas/perfiles/perfilAdministrador.php';
             break;
         default:
             echo "Inicio de sesión incorrecto";

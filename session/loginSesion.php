@@ -1,46 +1,34 @@
 <?php 
 
-
-function inicia_sesion(){
-session_start();
-};
-
-
- function guarda_session($contrasena, $nombre){
-$_SESSION[$contrasena]=$nombre;
- };
-
- function cierra_sesion(){
-    session_destroy();
-};
-
-function estaLogin(){
-    return isset($_SESSION['user']);
-};
-
-function comprobar($contrasena){
-    if(empty ($contrasena) ){
-        return"";
-    }else {
-        return $_SESSION['user'];
+class Sesion {
+    public function inicia_sesion() {
+        session_start();
     }
-};
 
+    public function guarda_session($contrasena, $nombre) {
+        $_SESSION[$contrasena] = $nombre;
+    }
 
+    public function cierra_sesion() {
+        session_destroy();
+    }
 
+    public function estaLogin() {
+        return isset($_SESSION['user']);
+    }
 
+    public function comprobar($contrasena) {
+        if(empty($contrasena)) {
+            return "";
+        } else {
+            return $_SESSION['user'];
+        }
+    }
 
-function login($nombre,$contrasena) {
-    inicia_sesion();
-    guarda_session('nombre', $nombre);
+    public function login($nombre, $contrasena) {
+        $this->inicia_sesion();
+        $this->guarda_session('nombre', $nombre);
+    }
 }
 
-
-// function login($nombre) {
-//     inicia_sesion();
-//     guarda_session('user',$nombre);
-    
-        
-//     }; 
-    
-    ?>
+?>

@@ -27,14 +27,14 @@ if (isset($_POST['nombre']) && isset($_POST['contrasena']) && !empty($_POST['nom
     if ($user && $password == $user['contrasena']) {
         login($username, $password);
 
-        if ($user['rol'] == 'alumno') {
-           // require_once './Vistas/perfiles/perfilAlumno.php';
-            header('Location: ./Vistas/perfiles/perfilAlumno.php');
-        } elseif ($user['rol'] == 'profesor') {
-            header('Location: ./Vistas/perfiles/perfilProfesor.php');
-        } elseif ($user['rol'] == 'admi') {
-            header('Location: ./Vistas/perfiles/perfilAdministrador.php');
-        }
+        // if ($user['rol'] == 'alumno') {
+        //    // require_once './Vistas/perfiles/perfilAlumno.php';
+        //     header('Location: ./Vistas/perfiles/perfilAlumno.php');
+        // } elseif ($user['rol'] == 'profesor') {
+        //     header('Location: ./Vistas/perfiles/perfilProfesor.php');
+        // } elseif ($user['rol'] == 'admi') {
+        //     header('Location: ./Vistas/perfiles/perfilAdministrador.php');
+        // }
     } else {
         echo "Inicio de sesión mal";
     }

@@ -9,11 +9,15 @@
 </head>
 <body>
    
-    <?php
-  
+<?php
+    if (isset($_SESSION['nombre'])) {
+        // Si el usuario ha iniciado sesión, incluye el encabezado del usuario
+        require_once 'headerusuario.php';
+    } else {
+        // Si el usuario no ha iniciado sesión, incluye el encabezado principal
         require_once 'header.php';
-       
-    ?>
+    }
+?>
     <section>
         <div id="cuerpo">
         <?php
