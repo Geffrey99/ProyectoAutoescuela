@@ -4,9 +4,8 @@ if (isset($_GET['menu'])) {
         require_once 'index.php';
     }
     if ($_GET['menu'] == "participantes") {
-        require_once './repository/usuariosdb.php';
+        require_once '../../Vistas/informacion/participantes.php';
         // require_once '../../repository/usuariosdb.php';
-     
     }
     if ($_GET['menu'] == "correcciones") {
         require_once './Vistas/informacion/somos.php';

@@ -2,6 +2,10 @@
 <?php
 require_once './session/loginSesion.php';
 
+require_once './helper/autocargar.php';   
+
+
+
 function verificarUsuario($nombre, $contrasena) {
     $db = new Database();
     $pdo = $db->getPdo();
@@ -15,7 +19,8 @@ function verificarUsuario($nombre, $contrasena) {
         if ($user && $contrasena == $user['contrasena']) {
             $sesion = new Sesion();
             $sesion->login($nombre, $contrasena);
-            redirigirSegunRol($user['rol']);
+        //    $_SESSION['rol'] = $user['rol'];
+             redirigirSegunRol($user['rol']);
         } else {
             echo "Inicio de sesión incorrecto";
         }
@@ -27,17 +32,18 @@ function verificarUsuario($nombre, $contrasena) {
 function redirigirSegunRol($rol) {
     switch ($rol) {
         case 'alumno':
-            require_once './Vistas/perfiles/perfilAlumno.php';
+            header('Location: ./Vistas/perfiles/perfilAlumno.php');
             break;
         case 'profesor':
-            require_once './Vistas/perfiles/perfilProfesor.php';
+            header('Location: ./Vistas/perfiles/perfilProfesor.php');
             break;
         case 'admi':
-            require_once './Vistas/perfiles/perfilAdministrador.php';
+            header('Location: ./Vistas/perfiles/perfilAdministrador.php');
             break;
         default:
             echo "Inicio de sesión incorrecto";
     }
+    exit;
 }
 
 // function redirigirSegunRol($rol){

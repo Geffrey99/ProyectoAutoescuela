@@ -1,3 +1,7 @@
+<?php
+// Inicia la sesión al principio del script
+session_start();
+?>
 <header>
     <div id="nombre">
         <?php
