@@ -17,7 +17,7 @@
         <div id="cuerpo">
         <?php
         
-          require_once 'enruta.php';
+          require_once 'enrutaperfil.php';
         
         ?>
         </div>
@@ -25,7 +25,7 @@
 
     <?php
         // require_once 'main.php';
-      //  require_once '../principal/footer.php';
+        require_once '../principal/footer.php';
     ?>
 
 </body>

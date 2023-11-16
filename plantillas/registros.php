@@ -1,8 +1,11 @@
 
 <!DOCTYPE html>
 <html>
+    <head>
+    <title>Registros</title>
 <script src="../../api/procesaRegistro.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/estiloregistros.css">
+<link rel="stylesheet" type="text/css" href="../../css/estiloRegistros.css">
+    </head>
 <body> 
     <?php
         // include_once './autocargar.php';
@@ -15,7 +18,7 @@
             echo 'No hay solicitudes.';
         } else {
             foreach ($users as $user) {
-                echo '<form onsubmit="procesaUsuario(event, \''.$user['nombre'].'\', \''.$user['contrasena'].'\', this.role.value)" method="post">';
+                echo '<form id="formulario-registros" onsubmit="procesaUsuario(event, \''.$user['nombre'].'\', \''.$user['contrasena'].'\', this.role.value)" method="post">';
                 echo '<label for="username">Nombre de usuario:</label><br>';
                 echo '<input type="text" id="username" name="username" value="'.$user['nombre'].'" required readonly><br>';
                 echo '<label for="password">Contraseña:</label><br>';

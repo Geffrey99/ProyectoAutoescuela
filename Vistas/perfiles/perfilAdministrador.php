@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../../css/perfilAlumno.css">
     <link rel="stylesheet" type="text/css" href="../../css/pregunta.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./css/estiloregistros.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../css/estiloregistros.css"> -->
         <script src="../../js/perfilAlumno.js"></script> 
         <script src="../../Api/procesaUsuariodb.js"></script>
 
@@ -17,19 +17,17 @@
         require_once 'navAdministrador.php';
        
     ?>
-    <section>
-        <div id="cuerpo">
+   
         <?php
         
            require_once 'enrutaperfil.php';
         
         ?>
-        </div>
-    </section>
+
 
     <?php
         // require_once 'main.php';
-      //  require_once '../principal/footer.php';
+        require_once '../principal/footer.php';
     ?>
 
 </body>

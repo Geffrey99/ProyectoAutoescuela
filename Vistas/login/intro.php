@@ -1,7 +1,6 @@
 
 <?php
 require_once './session/loginSesion.php';
-
 require_once './helper/autocargar.php';   
 
 
@@ -45,6 +44,9 @@ function redirigirSegunRol($rol) {
     }
     exit;
 }
+
+
+
 
 // function redirigirSegunRol($rol){
 

@@ -33,6 +33,13 @@ switch ($menu) {
 
 
 
+
+
+
+
+
+
+
 // if (isset($_GET['menu'])) {
 //     if ($_GET['menu'] == "inicio") {
 //         require_once 'index.php';

@@ -76,5 +76,17 @@ class Pregunta {
     public function setTipoUrl($tipoUrl) {
         $this->tipoUrl = $tipoUrl;
     }
+    public function toArray() {
+        return [
+            'id_pregunta' => $this->id_pregunta,
+            'enunciado' => $this->enunciado,
+            'respuestas' => $this->respuestas,
+            'categoria' => $this->categoria,
+            'dificultad' => $this->dificultad,
+            'url' => $this->url,
+            'tipoUrl' => $this->tipoUrl
+        ];
+    }
 }
+
 ?>

@@ -1,38 +1,45 @@
-body {
+#formulario-registros {
     font-family: Arial, sans-serif;
-}
-
-form {
-    width: 300px;
-    margin: 0 auto;
+    background-color: white;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f8f8f8;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
 }
 
-label {
+#formulario-registros label {
     display: block;
     margin-bottom: 5px;
+    font-size: 20px ;
 }
 
-input[type="text"], input[type="password"], select {
-    width: 100%;
+#formulario-registros input[type="text"], 
+#formulario-registros input[type="password"], 
+#formulario-registros select {
+    width: 70%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;  
 }
 
-input[type="submit"] {
+#formulario-registros input[type="submit"] {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: #4CAF50;
     color: white;
     cursor: pointer;
+    width: 45%;
+    margin: 2.5%;
+    font-size: 18px;
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
+#formulario-registros input[type="submit"]:hover {
+    background-color: #45a049;
+
 }

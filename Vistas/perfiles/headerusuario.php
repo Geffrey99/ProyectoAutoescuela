@@ -1,5 +1,5 @@
 <?php
-// Inicia la sesión al principio del script
+// Inicia la sesión
 session_start();
 ?>
 <header>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Formulario</title>
+    <title>Crear Preguntas</title>
+    <script src="../../Api/procesaPregunta.js"></script>
 </head>
 <body>
     <div class="container">
-        <form action="../../REPOSITORIO/procesarPreguntas.php" method="post" enctype="multipart/form-data">
+    <form action="../../repository/procesarPreguntas.php" method="post" enctype="multipart/form-data" onsubmit="procesaPregunta(event)">
             <div class="form-group">
                 <label for="pregunta">Pregunta:</label><br>
                 <input type="text" id="pregunta" name="pregunta">
