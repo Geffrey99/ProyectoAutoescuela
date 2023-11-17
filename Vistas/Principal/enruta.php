@@ -21,11 +21,7 @@ switch ($menu) {
         break;
     case 'somos':
         require_once './Vistas/informacion/somos.php';
-        break;
-    // case 'participantes':
-    //     require_once './repository/usuariosdb.php';
         break;    
-    // Añade más casos según sea necesario
     default:
         require_once 'index.php';
 }

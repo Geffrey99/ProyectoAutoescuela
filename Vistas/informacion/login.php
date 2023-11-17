@@ -1,6 +1,5 @@
 <?php
-require_once './vistas/login/intro.php';
-       
+require_once './vistas/login/intro.php';      
 ?>
         <div class="login-div">
 <form action="" method="post">

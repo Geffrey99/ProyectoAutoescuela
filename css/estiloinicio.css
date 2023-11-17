@@ -113,7 +113,7 @@ footer {
     height: 10%;
 }
 
-/* ---------------------Estilo cuadro del login y registro */
+/* ------------------------------------------Estilo cuadro del login y registro */
 form {
     display: flex;
     flex-direction: column;

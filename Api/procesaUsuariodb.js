@@ -1,12 +1,12 @@
 function eliminarUsuario(id) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', '../../repository/eliminarUsuariodb.php', true);
-    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.onload = function() {
+    var usuariodb = new XMLHttpRequest();
+    usuariodb.open('POST', '../../repository/eliminarUsuariodb.php', true);
+    usuariodb.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    usuariodb.onload = function() {
         if (this.status == 200) {
             console.log(this.responseText);
             location.reload();
         }
     };
-    xhr.send('id=' + id);
+    usuariodb.send('id=' + id);
 }

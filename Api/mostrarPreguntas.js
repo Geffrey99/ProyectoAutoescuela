@@ -1,7 +1,7 @@
 window.onload = function() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', '../../repository/preguntasdb.php', true);
-    xhr.onload = function() {
+    var objetopregunta = new XMLHttpRequest();
+    objetopregunta.open('GET', '../../repository/preguntasdb.php', true);
+    objetopregunta.onload = function() {
         if (this.status == 200) {
             var preguntas = JSON.parse(this.responseText);
             var tabla = document.getElementById('tabla-preguntas');
@@ -49,20 +49,19 @@ window.onload = function() {
             });
         }
     };
-    xhr.send();
+    objetopregunta.send();
 };
 
 
-// aqui van las funciones de los botones
 
 function modificarPregunta(id) {
     console.log('Pregunta modificada: ' + id);
 }
 
 function eliminarPregunta(id) {
-    console.log('Pregunta eliminada: ' + id);
+   
 }
 
 function asignarPregunta(id) {
-    console.log('Pregunta asignada: ' + id);
+  
 }

@@ -12,19 +12,17 @@ function obtenerPreguntas() {
     $preguntas = [];
     while ($row = $stmt->fetch()) {
         $pregunta = new Pregunta($row['id_pregunta'], $row['enunciado'], $row['respuestas'], $row['categoria'], $row['dificultad'], $row['url'], $row['tipoUrl']);
-        $preguntas[] = $pregunta->toArray(); // Usa el método toArray()
+        $preguntas[] = $pregunta->toArray(); // método toArray()
     }
 
     return $preguntas;
 }
 
-
-// Obtén las preguntas
 $preguntas = obtenerPreguntas();
 
-// Convierte el array de preguntas en una cadena JSON
+//convierte el array de preguntas en una cadena JSON
 $preguntasJson = json_encode($preguntas);
 
-// Devuelve la cadena JSON al cliente
+//devuelve la cadena JSON al cliente
 echo $preguntasJson;
 ?>

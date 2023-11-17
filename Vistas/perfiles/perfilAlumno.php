@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Alumno</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../../css/perfilAlumno.css">
-        <script src="../../js/perfilAlumno.js"></script> 
-        <script src="../../js/autoescuela.js"></script>
-     <!-- <link rel="stylesheet" type="text/css" href="../../css/estiloexamen.css">  -->
+    <link rel="stylesheet" type="text/css" href="../../css/perfilUsuario.css">
+    <script src="../../Api/logout.js"></script> 
 
 </head>
 <body>

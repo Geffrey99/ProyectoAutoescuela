@@ -3,8 +3,6 @@
 require_once './session/loginSesion.php';
 require_once './helper/autocargar.php';   
 
-
-
 function verificarUsuario($nombre, $contrasena) {
     $db = new Database();
     $pdo = $db->getPdo();

@@ -12,11 +12,11 @@
      </div>
 </div> -->
 
-
+<!-- 
 <form action="submit_exam.php" method="post">
-    <div id="exam">
+    <div id="exam"> -->
         <!-- Pregunta 1 -->
-        <div class="pregunta">
+        <!-- <div class="pregunta">
             <h2><span class="numero">1</span>. <span class="categoria">Categoria 1</span></h2>
             <p class="descripcion">Descripcion de la pregunta 1</p>
             <div class="opciones">
@@ -28,9 +28,9 @@
                 <label for="opcion1_3">Opción 3</label>
             </div>
             <button type="button" class="descartar">Descartar</button>
-        </div>
+        </div> -->
         <!-- Pregunta 2 -->
-        <div class="pregunta">
+        <!-- <div class="pregunta">
             <h2><span class="numero">2</span>. <span class="categoria">Categoria 2</span></h2>
             <p class="descripcion">Descripcion de la pregunta 2</p>
             <div class="opciones">
@@ -149,5 +149,5 @@
         </div>
     </div>
     <input type="submit" value="Enviar">
-</form>
+</form> -->
 

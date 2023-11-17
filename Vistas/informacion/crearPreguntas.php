@@ -3,6 +3,7 @@
 <head>
     <title>Crear Preguntas</title>
     <script src="../../Api/procesaPregunta.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/pregunta.css">
 </head>
 <body>
     <div class="container">

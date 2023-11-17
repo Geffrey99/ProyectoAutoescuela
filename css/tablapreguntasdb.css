@@ -16,7 +16,7 @@
     color: white;
 }
 
-#tabla-preguntas tr:nth-child(even) {
+#tabla-preguntas tr:nth-child(even) { /*me selecciona todos los elementos de los hijos pares del elemento*/
     background-color: #f2f2f2;
 }
 
@@ -27,9 +27,9 @@
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block; /* Hace que los botones aparezcan uno al lado del otro */
+    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    margin-right: 10px; /* Añade un poco de espacio a la derecha de cada botón */
+    margin-right: 10px; 
 }

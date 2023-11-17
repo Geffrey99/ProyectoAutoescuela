@@ -6,7 +6,7 @@ if (isset($_POST['username'], $_POST['password'], $_POST['repeat_password'])) {
     $password = $_POST['password'];
     $repeat_password = $_POST['repeat_password'];
 
-    // Verificar que las contraseñas coincidan
+    //verifico que las contraseñas coincidan
     if ($password !== $repeat_password) {
         echo "Las contraseñas no coinciden.";
         exit();
@@ -16,7 +16,7 @@ if (isset($_POST['username'], $_POST['password'], $_POST['repeat_password'])) {
         $db = new Database();
         $pdo = $db->getPdo();
 
-        // Verificar si el nombre de usuario ya existe
+        //compruebo si el nombre de usuario ya existe
         $stmt = $pdo->prepare("SELECT * FROM Usuario WHERE nombre = ?");
         $stmt->execute([$username]);
         if ($stmt->fetch()) {
@@ -24,7 +24,7 @@ if (isset($_POST['username'], $_POST['password'], $_POST['repeat_password'])) {
             exit();
         }
 
-        // Registrar al usuario en la tabla UsuarioPendiente
+        //y registro al usuario en la tabla UsuarioPendiente
         $stmt = $pdo->prepare("INSERT INTO UsuarioPendiente (nombre, contrasena) VALUES (?, ?)");
         $stmt->execute([$username, $password]);
         echo "Usuario registrado correctamente.";

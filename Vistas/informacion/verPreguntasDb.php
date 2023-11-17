@@ -14,7 +14,7 @@
                 <th>Dificultad</th>
                 <th>Acciones</th>
             </tr>
-            <!-- Las filas de la tabla se llenarán dinámicamente con JavaScript -->
+          
         </table>
     </div>
 </body>
