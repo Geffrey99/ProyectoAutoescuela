@@ -7,7 +7,7 @@ if (isset($_GET['menu'])) {
         require_once '../../Vistas/informacion/participantes.php';
     }
     if ($_GET['menu'] == "examen") {
-        require_once '';
+       require_once '../../Vistas/informacion/examen.php';
      
     }
     if ($_GET['menu'] == "correcciones") {

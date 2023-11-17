@@ -9,7 +9,8 @@ if (isset($_POST['username'], $_POST['password'], $_POST['repeat_password'])) {
     //verifico que las contraseñas coincidan
     if ($password !== $repeat_password) {
         echo "Las contraseñas no coinciden.";
-        exit();
+        exit(); //se detendrá 
+        
     }
 
     try {
@@ -19,9 +20,9 @@ if (isset($_POST['username'], $_POST['password'], $_POST['repeat_password'])) {
         //compruebo si el nombre de usuario ya existe
         $stmt = $conexion->prepare("SELECT * FROM Usuario WHERE nombre = ?");
         $stmt->execute([$username]);
-        if ($stmt->fetch()) {
+        if ($stmt->fetch()) { //me consulta en la base de datos si el nombre existe
             echo "El nombre de usuario ya existe.";
-            exit();
+            exit(); //se detendrá
         }
 
         //y registro al usuario en la tabla UsuarioPendiente
@@ -31,7 +32,7 @@ if (isset($_POST['username'], $_POST['password'], $_POST['repeat_password'])) {
     } catch (PDOException $e) {
         echo "Error de conexión: " . $e->getMessage();
     }
-    
+    //al procesar los datos correctamente me devuelve al index
     header('Location: ./../index.php');
     exit;
 }
