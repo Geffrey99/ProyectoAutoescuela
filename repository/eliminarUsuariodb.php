@@ -14,7 +14,7 @@ if (isset($_POST['id'])) {
     }
 
     $sql = "DELETE FROM Usuario WHERE id_usuario = ?";
-    $stmt = $pdo->prepare($sql);
+    $stmt = $conexion->prepare($sql);
     if ($stmt->execute([$id])) {
         echo "Usuario eliminado correctamente.";
     } else {

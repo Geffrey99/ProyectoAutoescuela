@@ -41,14 +41,14 @@ if (isset($_FILES['archivo']) && $_FILES['archivo']['error'] === UPLOAD_ERR_OK) 
 }
 
 // Insertar la categoría si no existe
-$stmt = $pdo->prepare("INSERT IGNORE INTO categoria (nombre) VALUES (?)");
+$stmt = $conexion->prepare("INSERT IGNORE INTO categoria (nombre) VALUES (?)");
 $stmt->execute([$categoria]);
 
 // Insertar la dificultad si no existe
-$stmt = $pdo->prepare("INSERT IGNORE INTO dificultad (nombre) VALUES (?)");
+$stmt = $conexion->prepare("INSERT IGNORE INTO dificultad (nombre) VALUES (?)");
 $stmt->execute([$dificultad]);
 
 $sql = "INSERT INTO pregunta (enunciado, respuestas, categoria, dificultad, url, tipoUrl) VALUES (?, ?, ?, ?, ?, ?)";
-$stmt = $pdo->prepare($sql);
+$stmt = $conexion->prepare($sql);
 $stmt->execute([$pregunta, $respuestas, $categoria, $dificultad, $url, $tipoUrl]);
 ?>

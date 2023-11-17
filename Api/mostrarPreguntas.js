@@ -25,21 +25,23 @@ window.onload = function() {
                 var botonModificar = document.createElement('button');
                 botonModificar.textContent = 'Modificar';
                 botonModificar.onclick = function() {
-                    modificarPregunta(pregunta.id);
+                    modificarPregunta(pregunta.id_pregunta);
                 };
                 celdaAcciones.appendChild(botonModificar);
 
                 var botonEliminar = document.createElement('button');
                 botonEliminar.textContent = 'Eliminar';
                 botonEliminar.onclick = function() {
-                    eliminarPregunta(pregunta.id);
+                    eliminarPregunta(pregunta.id_pregunta);
                 };
                 celdaAcciones.appendChild(botonEliminar);
 
                 var botonAsignar = document.createElement('button');
                 botonAsignar.textContent = 'Asignar';
                 botonAsignar.onclick = function() {
-                    asignarPregunta(pregunta.id);
+                    var preguntaseleccionada = [];
+                    preguntaseleccionada.push(pregunta.id_pregunta);
+                    asignarPregunta(pregunta.id_pregunta)
                 };
                 celdaAcciones.appendChild(botonAsignar);
 
@@ -52,16 +54,34 @@ window.onload = function() {
     objetopregunta.send();
 };
 
-
-
-function modificarPregunta(id) {
-    console.log('Pregunta modificada: ' + id);
+function eliminarPregunta(id_pregunta) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '../../repository/eliminarpreg.php', true);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.onload = function() {
+        if (this.status == 200) {
+            console.log('Pregunta eliminada: ' + id_pregunta);
+            location.reload();
+        }
+    };
+    xhr.send('id_pregunta=' + id_pregunta);
 }
 
-function eliminarPregunta(id) {
-   
+function modificarPregunta(id_pregunta) {
+    console.log('comprobando la seleccionada MODIF ' + id_pregunta);
 }
 
-function asignarPregunta(id) {
-  
+
+function asignarPregunta(id_pregunta) {
+    console.log('comprobando la seleccionada asig ' + id_pregunta);
+    // var preguntaseleccionada = [];
+    // return preguntaseleccionada;
 }
+
+
+
+// function eliminarPregunta(id_pregunta) {
+//     console.log('comprobando la seleccionada ELIMIN ' + id_pregunta);
+// }
+
+

@@ -19,6 +19,7 @@ function obtenerPreguntas() {
     return $preguntas;
 }
 
+
 $preguntas = obtenerPreguntas();
 
 //convierte el array de preguntas en una cadena JSON
@@ -26,4 +27,8 @@ $preguntasJson = json_encode($preguntas);
 
 //devuelve la cadena JSON al cliente
 echo $preguntasJson;
+
+
+
+
 ?>

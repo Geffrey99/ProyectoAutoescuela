@@ -12,6 +12,6 @@ $db->abreConexion();
 $conexion = $db->getConexion();
 
 $sql = "UPDATE Usuario SET nombre = ?, contrasena = ?, rol = ? WHERE id_usuario = ?";
-$stmt = $pdo->prepare($sql);
+$stmt = $conexion->prepare($sql);
 $stmt->execute([$username, $password, $role, $id]);
 ?>
