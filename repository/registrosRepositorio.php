@@ -14,8 +14,8 @@ if (isset($_POST['username'], $_POST['password'], $_POST['repeat_password'])) {
 
     try {
         $db = new Database();
-        $pdo = $db->getPdo();
-
+        $db->abreConexion();
+        $conexion = $db->getConexion();
         //compruebo si el nombre de usuario ya existe
         $stmt = $pdo->prepare("SELECT * FROM Usuario WHERE nombre = ?");
         $stmt->execute([$username]);

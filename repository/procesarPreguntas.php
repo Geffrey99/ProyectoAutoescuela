@@ -1,7 +1,8 @@
 <?php
 require_once '../helper/autocargar.php';
 $db = new Database();
-$pdo = $db->getPdo();
+$db->abreConexion();
+$conexion = $db->getConexion();
 
 $pregunta = $_POST['pregunta'];
 $categoria = $_POST['categoria'];

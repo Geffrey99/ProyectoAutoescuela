@@ -5,11 +5,12 @@ require_once './helper/autocargar.php';
 
 function verificarUsuario($nombre, $contrasena) {
     $db = new Database();
-    $pdo = $db->getPdo();
+    $db->abreConexion();
+    $conexion = $db->getConexion();
 
     if (!empty($nombre) && !empty($contrasena)) {
         $sql = "SELECT * FROM Usuario WHERE nombre = ?";
-        $stmt = $pdo->prepare($sql);
+        $stmt = $conexion->prepare($sql);
         $stmt->execute([$nombre]);
         $user = $stmt->fetch();
 

@@ -3,10 +3,11 @@ require_once '../helper/autocargar.php';
 
 function obtenerPreguntas() {
     $db = new Database();
-    $pdo = $db->getPdo();
+    $db->abreConexion();
+    $conexion = $db->getConexion();
 
     $sql = "SELECT * FROM pregunta";
-    $stmt = $pdo->prepare($sql);
+    $stmt = $conexion->prepare($sql);
     $stmt->execute();
 
     $preguntas = [];

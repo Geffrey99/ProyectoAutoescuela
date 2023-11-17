@@ -3,10 +3,11 @@ require_once '../../helper/autocargar.php';
 
 function obtenerParticipantes() {
     $db = new Database();
-    $pdo = $db->getPdo();
+        $db->abreConexion();
+        $conexion = $db->getConexion();
 
     $sql = "SELECT * FROM Usuario";
-    $stmt = $pdo->prepare($sql);
+    $stmt = $conexion->prepare($sql);
     $stmt->execute();
 
     $participantes = [];

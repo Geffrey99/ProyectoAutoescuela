@@ -8,7 +8,8 @@ $password = $_POST['password'];
 $role = $_POST['role'];
 
 $db = new Database();
-$pdo = $db->getPdo();
+$db->abreConexion();
+$conexion = $db->getConexion();
 
 $sql = "UPDATE Usuario SET nombre = ?, contrasena = ?, rol = ? WHERE id_usuario = ?";
 $stmt = $pdo->prepare($sql);

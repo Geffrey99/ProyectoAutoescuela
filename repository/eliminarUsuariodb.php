@@ -5,8 +5,10 @@ if (isset($_POST['id'])) {
     $id = $_POST['id'];
 
     try {
+
         $db = new Database();
-        $pdo = $db->getPdo();
+        $db->abreConexion();
+        $conexion = $db->getConexion();
     } catch (PDOException $e) {
         echo "Error de conexión: " . $e->getMessage();
     }

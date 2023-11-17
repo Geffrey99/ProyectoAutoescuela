@@ -1,6 +1,5 @@
 <?php
 
-include_once 'Database.PHP';
 
 
 class usuario {
