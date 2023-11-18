@@ -8,4 +8,3 @@
             <li> <button> <a href="?menu=registros">Validar Registros</a> </button> </li>
         </ul>
     </nav>
-    

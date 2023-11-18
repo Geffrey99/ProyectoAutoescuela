@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../../css/perfilUsuario.css">
     <script src="../../Api/logout.js"></script> 
+   
+  
 
 </head>
 <body>
@@ -27,7 +29,7 @@
         // require_once 'main.php';
         require_once '../principal/footer.php';
     ?>
-
+  
 </body>
 
 </html>

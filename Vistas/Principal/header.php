@@ -1,6 +1,7 @@
 <header>
         <h1>  <a href="?menu=inicio"> AUTOESCUELA.GEFFREY</a> </h1>
-        <button>  <a href="?menu=login">Iniciar Sesion</a> </button>
+       <img src="./css/fotos/logogzzfin.png" alt="logo autoescuela">
+        <button id="inicio">  <a href="?menu=login">Iniciar Sesion</a> </button>
    
      <!--menu de navegacion---------------------------------->  
     

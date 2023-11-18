@@ -137,9 +137,13 @@ nav ul li {
 nav ul button:hover{
 background-color: chartreuse;
 }
+/* nav ul button.activo {
+    background-color: rgb(255, 0, 0); 
+   
+/* nav ul button.activo {
+    background-color: chartreuse; 
 
-nav ul button:active{ background-color: rgb(227, 231, 223); }
-
+*/
 a {
     text-decoration: none;
     color: black;
