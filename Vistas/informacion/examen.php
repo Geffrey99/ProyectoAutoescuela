@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../../js/autoescuela.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="../../css/estiloexamen.css"> -->
+    <link rel="stylesheet" type="text/css" href="../../css/estiloexamen.css"> 
 </head>
 <body>
 <div id="examen"></div>

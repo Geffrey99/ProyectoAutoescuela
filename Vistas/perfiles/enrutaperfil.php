@@ -11,7 +11,7 @@ if (isset($_GET['menu'])) {
      
     }
     if ($_GET['menu'] == "correcciones") {
-        require_once '';
+        require_once '../../Vistas/informacion/correcciones.php';
      
     }
     if ($_GET['menu']=='AsignarPreguntas'){

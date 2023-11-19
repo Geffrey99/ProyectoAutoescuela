@@ -20,7 +20,8 @@ function verificarUsuario($nombre, $contrasena) {
         //    $_SESSION['rol'] = $user['rol'];
              redirigirSegunRol($user['rol']);
         } else {
-            echo "Inicio de sesión incorrecto";
+            $_SESSION['error'] = "Inicio de sesion incorrecto.";
+            header('Location: ./index.php?menu=login');
         }
     }
 }
@@ -39,7 +40,9 @@ function redirigirSegunRol($rol) {
             header('Location: ./Vistas/perfiles/perfilAdministrador.php');
             break;
         default:
-            echo "Inicio de sesión incorrecto";
+        $_SESSION['error'] = "Las contraseñas no coinciden.";
+        header('Location: ./index.php?menu=login');
+
     }
     exit;
 }

@@ -39,11 +39,20 @@ h2 {
 }
 
 #logout button {
-    margin-top: 75%;
-    margin-inline-start: -75%;
+    margin-top: 74%;
+margin-right: auto;
+border-block: initial;
+border-style: revert-layer;
+width: auto;
+font-size: unset;
+margin-left: -70%;
+border-bottom-style:inset;
+background-color: oldlace;
+font-family: emoji;
+cursor: pointer;
+    /* margin-inline-start: -75%;   */
     /* border-radius: 30%; */
-    /* border-style: groove; */
-    
+     /* border-style: groove;  */
     /* background-image: url(./fotos/logout.png);
     background-size: cover; */
 }
@@ -101,7 +110,8 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: rgba(175, 177, 174, 0.919);
+    background-color: #9aa6b1;
+   
 }
 
 

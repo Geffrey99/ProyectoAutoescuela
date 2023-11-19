@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once '../helper/autocargar.php';   
 
 if (isset($_POST['username'], $_POST['password'], $_POST['repeat_password'])) {
@@ -8,7 +9,8 @@ if (isset($_POST['username'], $_POST['password'], $_POST['repeat_password'])) {
 
     //verifico que las contraseñas coincidan
     if ($password !== $repeat_password) {
-        echo "Las contraseñas no coinciden.";
+        $_SESSION['error'] = "Las contraseñas no coinciden.";
+        header('Location: ./../index.php?menu=registro');
         exit(); //se detendrá 
         
     }
@@ -21,7 +23,8 @@ if (isset($_POST['username'], $_POST['password'], $_POST['repeat_password'])) {
         $stmt = $conexion->prepare("SELECT * FROM Usuario WHERE nombre = ?");
         $stmt->execute([$username]);
         if ($stmt->fetch()) { //me consulta en la base de datos si el nombre existe
-            echo "El nombre de usuario ya existe.";
+            $_SESSION['error'] = "El nombre de usuario ya existe.";
+            header('Location: ./../index.php?menu=registro');
             exit(); //se detendrá
         }
 
